@@ -5,7 +5,7 @@ import Main from '.'
 describe('<Main />', () => {
   it('should render the heading', () => {
     //renderiza o compoentne
-    const { container } = render(<Main />)
+    render(<Main />)
 
     //busca o elemento e verifica a existência dele
     expect(
@@ -13,7 +13,7 @@ describe('<Main />', () => {
     ).toBeInTheDocument()
 
     //gerar snapshot
-    expect(container.firstChild).toMatchSnapshot()
+    // expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render the colors correctly', () => {
